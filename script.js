@@ -1,64 +1,26 @@
 /* 
-   TYPING ANIMATION
+   LOADER
  */
 
-const text = [
-    "Frontend Developer",
-    "BCA Student",
-    "Open Source Contributor",
-    "UI Enthusiast",
-    "Continuous Learner"
-];
+window.addEventListener("load", () => {
 
-let textIndex = 0;
-let charIndex = 0;
-let deleting = false;
+    const loader = document.getElementById("loader");
 
-const typing = document.getElementById("typing");
+    if (loader) {
 
-function typeEffect(){
+        setTimeout(() => {
 
-    const current = text[textIndex];
+            loader.style.opacity = "0";
 
-    if(!deleting){
+            loader.style.visibility = "hidden";
 
-        typing.textContent = current.substring(0,charIndex++);
+            loader.style.pointerEvents = "none";
 
-        if(charIndex > current.length){
-
-            deleting = true;
-
-            setTimeout(typeEffect,1500);
-
-            return;
-        }
-
-    }else{
-
-        typing.textContent = current.substring(0,charIndex--);
-
-        if(charIndex < 0){
-
-            deleting = false;
-
-            textIndex++;
-
-            if(textIndex >= text.length){
-
-                textIndex = 0;
-
-            }
-
-        }
+        }, 700);
 
     }
 
-    setTimeout(typeEffect, deleting ? 60 : 120);
-
-}
-
-typeEffect();
-
+});
 
 /* 
    THEME TOGGLE
@@ -66,138 +28,226 @@ typeEffect();
 
 const themeBtn = document.getElementById("theme-toggle");
 
-themeBtn.addEventListener("click", () => {
+if (localStorage.getItem("theme") === "light") {
 
-    document.body.classList.toggle("light");
+    document.body.classList.add("light");
 
-});
-
-themeBtn.onclick = () => {
-
-    body.classList.toggle("light");
-
-    if(body.classList.contains("light")){
-
-        localStorage.setItem("theme","light");
-
-        icon.className = "fa-solid fa-sun";
-
-    }else{
-
-        localStorage.setItem("theme","dark");
-
-        icon.className = "fa-solid fa-moon";
-
+    if (themeBtn) {
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
     }
-
-};
-
-
-/* 
-   SCROLL REVEAL
- */
-
-const revealElements = document.querySelectorAll("section");
-
-const observer = new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
 
 }
 
+themeBtn?.addEventListener("click", () => {
+
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+
+        localStorage.setItem("theme", "light");
+
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+
+    } else {
+
+        localStorage.setItem("theme", "dark");
+
+        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+
+    }
+
 });
-
-},{threshold:.15});
-
-revealElements.forEach(sec=>{
-
-sec.classList.add("hidden");
-
-observer.observe(sec);
-
-});
-
 
 /* 
-   CURSOR GLOW
+   MOBILE MENU
  */
 
-const cursor = document.querySelector(".cursor-glow");
+const menuBtn = document.getElementById("menu-btn");
 
-document.addEventListener("mousemove",(e)=>{
+const navLinks = document.querySelector(".nav-links");
 
-cursor.style.left = e.clientX + "px";
+menuBtn?.addEventListener("click", () => {
 
-cursor.style.top = e.clientY + "px";
+    navLinks.classList.toggle("active");
+
+    menuBtn.classList.toggle("active");
 
 });
 
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
 
 /* 
    BACK TO TOP
  */
 
-const topBtn = document.createElement("button");
+const topBtn = document.getElementById("backToTop");
 
-topBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+window.addEventListener("scroll", () => {
 
-topBtn.id = "topBtn";
+    if (window.scrollY > 400) {
 
-document.body.appendChild(topBtn);
+        topBtn.style.display = "flex";
 
-window.addEventListener("scroll",()=>{
+    } else {
 
-if(window.scrollY > 500){
+        topBtn.style.display = "none";
 
-topBtn.classList.add("active");
-
-}else{
-
-topBtn.classList.remove("active");
-
-}
+    }
 
 });
 
-topBtn.onclick = ()=>{
+topBtn?.addEventListener("click", () => {
 
-window.scrollTo({
+    window.scrollTo({
 
-top:0,
+        top: 0,
 
-behavior:"smooth"
+        behavior: "smooth"
+
+    });
 
 });
-
-};
-
 
 /* 
    SCROLL PROGRESS
  */
 
-const progress = document.createElement("div");
+const progress = document.getElementById("scroll-progress");
 
-progress.id = "progress";
+window.addEventListener("scroll", () => {
 
-document.body.appendChild(progress);
+    const totalHeight =
 
-window.addEventListener("scroll",()=>{
+        document.documentElement.scrollHeight -
 
-const total =
+        document.documentElement.clientHeight;
 
-document.documentElement.scrollHeight -
+    const progressHeight =
 
-window.innerHeight;
+        (window.pageYOffset / totalHeight) * 100;
 
-const current =
-
-(window.scrollY / total) * 100;
-
-progress.style.width = current + "%";
+    progress.style.width = progressHeight + "%";
 
 });
+
+/* 
+   TYPING EFFECT
+ */
+
+const typing = document.getElementById("typing");
+
+const words = [
+
+    "Frontend Developer",
+
+    "BCA Student",
+
+    "Open Source Learner",
+
+    "JavaScript Enthusiast"
+
+];
+
+let wordIndex = 0;
+
+let charIndex = 0;
+
+let deleting = false;
+
+function typeEffect() {
+
+    if (!typing) return;
+
+    const currentWord = words[wordIndex];
+
+    if (!deleting) {
+
+        typing.textContent = currentWord.substring(0, charIndex++);
+
+        if (charIndex > currentWord.length) {
+
+            deleting = true;
+
+            setTimeout(typeEffect, 1500);
+
+            return;
+
+        }
+
+    } else {
+
+        typing.textContent = currentWord.substring(0, charIndex--);
+
+        if (charIndex < 0) {
+
+            deleting = false;
+
+            wordIndex = (wordIndex + 1) % words.length;
+
+        }
+
+    }
+
+    setTimeout(typeEffect, deleting ? 50 : 100);
+
+}
+
+typeEffect();
+
+/* 
+   SCROLL REVEAL
+ */
+
+const hiddenElements = document.querySelectorAll(
+
+    ".section,.project-card,.skill-card,.info-box,.timeline-item,.achievement-card,.contact-card"
+
+);
+
+hiddenElements.forEach(el => {
+
+    el.classList.add("hidden");
+
+});
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+
+    threshold: 0.15
+
+});
+
+hiddenElements.forEach(el => observer.observe(el));
+
+/* 
+   CURRENT YEAR
+ */
+
+const year = document.getElementById("year");
+
+if (year) {
+
+    year.textContent = new Date().getFullYear();
+
+}
+
+console.log("Portfolio V4 Loaded Successfully 🚀");

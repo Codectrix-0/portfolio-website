@@ -1461,3 +1461,60 @@ flex-direction:column;
 }
 
 }
+
+LIGHT THEME
+
+
+body.light{
+
+background:#f8f8ff;
+
+color:#222;
+
+}
+
+body.light header{
+
+background:#ffffff;
+
+}
+
+body.light .navbar{
+
+background:#ffffff;
+
+}
+
+body.light .project-card,
+body.light .skill-card,
+body.light .about-card,
+body.light .info-card,
+body.light .timeline-content,
+body.light .achievement-card,
+body.light .resume-card{
+
+background:#ffffff;
+
+color:#222;
+
+border:1px solid #ddd;
+
+}
+
+body.light p{
+
+color:#555;
+
+}
+
+body.light .primary-btn{
+
+color:white;
+
+}
+
+body.light .secondary-btn{
+
+color:#222;
+
+}

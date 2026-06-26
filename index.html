@@ -3,279 +3,355 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <title>Divya Mer | Portfolio</title>
 
-<title>Divya Mer | Portfolio</title>
+    <meta name="description"
+        content="Official Portfolio of Divya Mer | Frontend Developer | BCA Student | Open Source Learner">
 
-<link rel="preconnect"
-      href="https://fonts.googleapis.com">
+    <meta name="keywords"
+        content="Divya Mer, Portfolio, Frontend Developer, HTML, CSS, JavaScript, GitHub">
 
-<link rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin>
+    <meta name="author" content="Divya Mer">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="assets/icons/favicon.png">
 
-<link rel="stylesheet"
-      href="style.css">
+    <!-- Google Font -->
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="cursor-glow"></div>
+    <!-- Loader -->
 
-<header>
+    <div id="loader">
 
-<nav class="navbar">
+        <div class="loader-ring"></div>
 
-<div class="logo">
+        <h2>Divya Mer</h2>
 
-Divya<span>Mer</span>
+        <p>Loading Portfolio...</p>
 
-</div>
+    </div>
 
-<ul class="nav-links">
+    <!-- Background -->
 
-<li><a href="#home">Home</a></li>
+    <div class="blob blob1"></div>
 
-<li><a href="#about">About</a></li>
+    <div class="blob blob2"></div>
 
-<li><a href="#skills">Skills</a></li>
+    <div class="blob blob3"></div>
 
-<li><a href="#projects">Projects</a></li>
+    <div id="scroll-progress"></div>
 
-<li><a href="#contact">Contact</a></li>
+    <button id="backToTop">
 
-</ul>
+        <i class="fa-solid fa-arrow-up"></i>
 
-<div class="nav-right">
+    </button>
 
-<button id="theme-toggle">
+    <!-- Header -->
 
-<i class="fa-solid fa-moon"></i>
+    <header>
 
-</button>
+        <nav class="navbar">
 
-<div class="menu-btn">
+            <a href="#home" class="logo">
 
-<i class="fa-solid fa-bars"></i>
+                Divya<span>Mer</span>
 
-</div>
+            </a>
 
-</div>
+            <ul class="nav-links">
 
-</nav>
+                <li><a href="#home">Home</a></li>
 
-</header>
+                <li><a href="#about">About</a></li>
 
-<section class="hero"
-id="home">
+                <li><a href="#skills">Skills</a></li>
 
-<div class="hero-left">
+                <li><a href="#projects">Projects</a></li>
 
-<p class="hello">
+                <li><a href="#journey">Journey</a></li>
 
-👋 Hello, I'm
+                <li><a href="#contact">Contact</a></li>
 
-</p>
+            </ul>
 
-<h1>
+            <div class="nav-actions">
 
-Divya Mer
+                <button id="theme-toggle">
 
-</h1>
+                    <i class="fa-solid fa-moon"></i>
 
-<h2>
+                </button>
 
-<span id="typing"></span>
+                <div id="menu-btn">
 
-</h2>
+                    <i class="fa-solid fa-bars"></i>
 
-<p>
+                </div>
 
-Passionate BCA student building beautiful web experiences, contributing to open source, and continuously learning modern technologies.
+            </div>
 
-</p>
+        </nav>
 
-<div class="hero-buttons">
+    </header>
 
-<a href="#projects"
-class="primary-btn">
+    <!-- Hero -->
 
-Explore Projects
+    <section id="home" class="hero">
 
-</a>
+        <div class="hero-content">
 
-<a href="#resume"
-class="secondary-btn">
+            <span class="hero-tag">
 
-View Resume
+                👋 Welcome to my Portfolio
 
-</a>
+            </span>
 
-<div class="socials">
+            <h1>
 
-    <!-- GitHub -->
-    <a href="https://github.com/Codectrix-0"
-       target="_blank"
-       aria-label="GitHub">
+                Hi, I'm
 
-        <i class="fab fa-github"></i>
+                <span>Divya Mer</span>
 
-    </a>
+            </h1>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/divyamer/"
-       target="_blank"
-       aria-label="LinkedIn">
+            <h2>
 
-        <i class="fab fa-linkedin"></i>
+                <span id="typing"></span>
 
-    </a>
+            </h2>
 
-    <!-- Email -->
-    <a href="mailto:divyamer066@gmail.com"
-       aria-label="Email">
+            <p>
 
-        <i class="fas fa-envelope"></i>
+                I am a BCA student passionate about Frontend Development,
+                Open Source, and building clean, responsive web applications.
+                Currently preparing for internships, contributing to projects,
+                and working toward becoming a Microsoft Learn Student Ambassador.
 
-    </a>
+            </p>
 
-</div>
+            <div class="hero-buttons">
 
-<div class="hero-right">
+                <a href="#projects" class="btn primary-btn">
 
-<div class="profile-card">
+                    View Projects
 
-<div class="profile-circle">
+                </a>
 
-DM
+                <a href="assets/resume/Divya_Mer_Resume.pdf"
 
-</div>
+                    target="_blank"
 
-<h3>
+                    class="btn secondary-btn">
 
-Divya Mer
+                    View Resume
 
-</h3>
+                </a>
 
-<p>
+            </div>
 
-Frontend Developer
+            <div class="social-links">
 
-</p>
+                <a href="https://github.com/Codectrix-0"
 
-</div>
+                    target="_blank"
 
-</div>
+                    aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/divyamer"
+
+                    target="_blank"
+
+                    aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+                <a href="mailto:divyamer066@gmail.com"
+
+                    aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="hero-box">
+
+                <span class="status-dot"></span>
+
+                <h3>Available for Internship</h3>
+
+                <p>
+
+                    Frontend Development • Open Source • Learning Everyday
+
+                </p>
+
+                <hr>
+
+                <div class="quick-info">
+
+                    <div>
+
+                        <h4>Education</h4>
+
+                        <p>BCA (2025–2028)</p>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Focus</h4>
+
+                        <p>Frontend Development</p>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Location</h4>
+
+                        <p>India</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--ABOUT -->
+
+<section class="about section" id="about">
+
+    <div class="section-title">
+        <span>Get To Know Me</span>
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <h3>Hello 👋</h3>
+
+            <p>
+
+                I'm <strong>Divya Mer</strong>, a passionate BCA student (2025–2028)
+                with a strong interest in Frontend Development, Open Source,
+                and creating modern web experiences.
+
+            </p>
+
+            <p>
+
+                I enjoy transforming ideas into beautiful and responsive
+                websites while continuously improving my programming
+                and problem-solving skills.
+
+            </p>
+
+            <p>
+
+                Currently preparing for internships, Microsoft Learn Student
+                Ambassador, and expanding my knowledge in JavaScript,
+                Firebase, Git, GitHub and modern web technologies.
+
+            </p>
+
+        </div>
+
+        <div class="about-info">
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h4>Education</h4>
+
+                <p>BCA (2025–2028)</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h4>Specialization</h4>
+
+                <p>Frontend Development</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-code-branch"></i>
+
+                <h4>Open Source</h4>
+
+                <p>Starting in 2026</p>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h4>Goal</h4>
+
+                <p>Software Engineer</p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-      <!-- 
-        ABOUT SECTION
- -->
+<!-- SKILLS -->
 
-<section class="about" id="about">
+<section class="skills section" id="skills">
 
-<div class="section-header">
+    <div class="section-title">
 
-<p>Get To Know Me</p>
-
-<h2>About Me</h2>
-
-</div>
-
-<div class="about-container">
-
-<div class="about-left">
-
-<div class="about-card">
-
-<h3>👋 Hello!</h3>
-
-<p>
-
-I'm <strong>Divya Mer</strong>, a BCA student passionate about frontend development, UI design, and open-source contributions.
-
-I enjoy creating modern, responsive websites while continuously improving my problem-solving skills.
-
-</p>
-
-<p>
-
-Currently preparing for internships and the Microsoft Learn Student Ambassador Program while expanding my knowledge of JavaScript, React, Git, and Data Structures & Algorithms.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="about-right">
-
-<div class="info-card">
-
-<i class="fa-solid fa-user-graduate"></i>
-
-<h3>Education</h3>
-
-<p>Bachelor of Computer Applications (BCA)</p>
-
-</div>
-
-<div class="info-card">
-
-<i class="fa-solid fa-code"></i>
-
-<h3>Experience</h3>
-
-<p>Frontend Projects & Open Source</p>
-
-</div>
-
-<div class="info-card">
-
-<i class="fa-solid fa-lightbulb"></i>
-
-<h3>Currently Learning</h3>
-
-<p>JavaScript • React • DSA</p>
-
-</div>
-
-<div class="info-card">
-
-<i class="fa-solid fa-earth-asia"></i>
-
-<h3>Goal</h3>
-
-<p>Become a Software Engineer</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-      <!-- 
-        SKILLS SECTION
- -->
-
-<section class="skills" id="skills">
-
-    <div class="section-header">
-
-        <p>My Tech Stack</p>
+        <span>Tech Stack</span>
 
         <h2>Skills & Tools</h2>
 
@@ -284,31 +360,31 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
     <div class="skills-grid">
 
         <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
+            <i class="fab fa-html5"></i>
             <h3>HTML5</h3>
             <span>Advanced</span>
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fab fa-css3-alt"></i>
             <h3>CSS3</h3>
             <span>Advanced</span>
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
+            <i class="fab fa-js"></i>
             <h3>JavaScript</h3>
             <span>Intermediate</span>
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-git-alt"></i>
+            <i class="fab fa-git-alt"></i>
             <h3>Git</h3>
             <span>Intermediate</span>
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-github"></i>
+            <i class="fab fa-github"></i>
             <h3>GitHub</h3>
             <span>Intermediate</span>
         </div>
@@ -326,19 +402,19 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-python"></i>
+            <i class="fab fa-python"></i>
             <h3>Python</h3>
-            <span>Beginner</span>
+            <span>Basic</span>
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-react"></i>
-            <h3>React</h3>
+            <i class="fa-solid fa-fire"></i>
+            <h3>Firebase</h3>
             <span>Learning</span>
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-figma"></i>
+            <i class="fab fa-figma"></i>
             <h3>Figma</h3>
             <span>Basic</span>
         </div>
@@ -347,174 +423,231 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
 
 </section>
 
-      <!-- 
-        PROJECTS SECTION
- -->
+<!-- PROJECTS -->
 
-<section class="projects" id="projects">
+<section class="projects section" id="projects">
 
-    <div class="section-header">
+    <div class="section-title">
 
-        <p>My Work</p>
+        <span>Featured Work</span>
 
-        <h2>Featured Projects</h2>
+        <h2>Projects</h2>
 
     </div>
 
-    <div class="projects-grid">
+    <div class="projects-container">
 
-        <!-- Project 1 -->
+        <!-- Smart Task Manager -->
 
-        <div class="project-card featured">
+        <div class="project-card">
 
-            <div class="project-image">
+            <h3>Smart Task Manager ⭐</h3>
 
-                <img src="assets/images/task-manager.png"
-                     alt="Smart Task Manager">
+            <p>
+
+                A modern productivity application designed to manage
+                daily tasks with an intuitive and responsive interface.
+
+            </p>
+
+            <h4>Key Features</h4>
+
+            <ul>
+
+                <li>✔ Dark / Light Theme</li>
+
+                <li>✔ Local Storage</li>
+
+                <li>✔ Search Tasks</li>
+
+                <li>✔ Categories</li>
+
+                <li>✔ Responsive Design</li>
+
+            </ul>
+
+            <div class="tech-tags">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
 
             </div>
 
-            <div class="project-content">
+            <div class="project-links">
 
-                <span class="project-tag">
-                    ⭐ Featured Project
-                </span>
+                <a href="https://github.com/Codectrix-0"
+                    target="_blank">
 
-                <h3>Smart Task Manager</h3>
+                    GitHub
 
-                <p>
+                </a>
 
-                    A modern task management application with
-                    dark mode, drag & drop, local storage,
-                    categories, and responsive design.
+                <a href="https://codectrix-0.github.io/smart-task-manager/"
+                    target="_blank">
 
-                </p>
+                    Live Demo
 
-                <div class="tech-stack">
-
-                    <span>HTML</span>
-
-                    <span>CSS</span>
-
-                    <span>JavaScript</span>
-
-                </div>
-
-                <div class="project-buttons">
-
-                    <a href="#" class="github-btn">
-
-                        <i class="fab fa-github"></i>
-
-                        GitHub
-
-                    </a>
-
-                    <a href="#" class="live-btn">
-
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                        Live Demo
-
-                    </a>
-
-                </div>
+                </a>
 
             </div>
 
         </div>
 
-        <!-- Project 2 -->
+        <!-- MindEase -->
 
         <div class="project-card">
 
-            <div class="project-image">
+            <h3>MindEase</h3>
 
-                <img src="assets/images/finflow.png"
-                     alt="FinFlow">
+            <p>
+
+                A clean mental wellness web application focused on
+                creating a calm and user-friendly experience.
+
+            </p>
+
+            <h4>Key Features</h4>
+
+            <ul>
+
+                <li>✔ Responsive UI</li>
+
+                <li>✔ Modern Layout</li>
+
+                <li>✔ Interactive Design</li>
+
+                <li>✔ Clean Interface</li>
+
+            </ul>
+
+            <div class="tech-tags">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
 
             </div>
 
-            <div class="project-content">
+            <div class="project-links">
 
-                <h3>FinFlow</h3>
+                <a href="https://github.com/Codectrix-0"
+                    target="_blank">
 
-                <p>
+                    GitHub
 
-                    Expense Tracker with beautiful dashboard,
-                    charts, authentication, and responsive UI.
+                </a>
 
-                </p>
+                <a href="https://codectrix-0.github.io/MindEase/"
+                    target="_blank">
 
-                <div class="tech-stack">
+                    Live Demo
 
-                    <span>HTML</span>
-
-                    <span>CSS</span>
-
-                    <span>JavaScript</span>
-
-                </div>
-
-                <div class="project-buttons">
-
-                    <a href="#" class="github-btn">
-
-                        <i class="fab fa-github"></i>
-
-                        GitHub
-
-                    </a>
-
-                </div>
+                </a>
 
             </div>
 
         </div>
 
-        <!-- Project 3 -->
+        <!-- FinFlow -->
 
         <div class="project-card">
 
-            <div class="project-image">
+            <h3>FinFlow</h3>
 
-                <img src="assets/images/cpp.png"
-                     alt="C++ Repository">
+            <p>
+
+                Personal finance management application currently
+                under active development.
+
+            </p>
+
+            <h4>Key Features</h4>
+
+            <ul>
+
+                <li>✔ Expense Tracking</li>
+
+                <li>✔ Income Management</li>
+
+                <li>✔ Dashboard</li>
+
+                <li>✔ Firebase Integration (Coming Soon)</li>
+
+            </ul>
+
+            <div class="tech-tags">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
 
             </div>
 
-            <div class="project-content">
+            <div class="project-links">
 
-                <h3>C++ DSA Repository</h3>
+                <a href="https://github.com/Codectrix-0"
+                    target="_blank">
 
-                <p>
+                    GitHub
 
-                    Collection of Data Structures & Algorithms
-                    solutions with explanations and clean code.
+                </a>
 
-                </p>
+            </div>
 
-                <div class="tech-stack">
+        </div>
 
-                    <span>C++</span>
+        <!-- Portfolio -->
 
-                    <span>STL</span>
+        <div class="project-card">
 
-                    <span>DSA</span>
+            <h3>Portfolio Website</h3>
 
-                </div>
+            <p>
 
-                <div class="project-buttons">
+                My personal portfolio showcasing projects,
+                technical skills, achievements, and journey.
 
-                    <a href="#" class="github-btn">
+            </p>
 
-                        <i class="fab fa-github"></i>
+            <h4>Key Features</h4>
 
-                        GitHub
+            <ul>
 
-                    </a>
+                <li>✔ Fully Responsive</li>
 
-                </div>
+                <li>✔ Dark / Light Mode</li>
+
+                <li>✔ Modern UI</li>
+
+                <li>✔ Smooth Animations</li>
+
+            </ul>
+
+            <div class="tech-tags">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a href="https://github.com/Codectrix-0"
+                    target="_blank">
+
+                    GitHub
+
+                </a>
 
             </div>
 
@@ -524,15 +657,13 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
 
 </section>
 
-      <!-- 
-     JOURNEY SECTION
- -->
+<!-- JOURNEY -->
 
-<section class="journey" id="journey">
+<section class="journey section" id="journey">
 
-    <div class="section-header">
+    <div class="section-title">
 
-        <p>My Journey</p>
+        <span>My Journey</span>
 
         <h2>Education & Experience</h2>
 
@@ -540,63 +671,78 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
 
     <div class="timeline">
 
-        <!-- Education -->
-
         <div class="timeline-item">
 
-            <div class="timeline-dot"></div>
+            <div class="timeline-icon">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
 
             <div class="timeline-content">
 
                 <span>2025 – 2028</span>
 
-                      <h3>Bachelor of Computer Applications (BCA)</h3>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
 
-              <p>
-                 Currently pursuing a Bachelor of Computer Applications (2025–2028), building a strong foundation in programming, web development, databases, and data structures while continuously improving practical development skills.
-              </p>
+                <p>
+
+                    Currently pursuing BCA while building strong
+                    fundamentals in programming, web development,
+                    Git, GitHub and Data Structures.
+
+                </p>
 
             </div>
 
         </div>
 
-       <div class="timeline-item">
-
-    <div class="timeline-dot"></div>
-
-    <div class="timeline-content">
-
-        <span>2026</span>
-
-        <h3>Frontend Development Intern</h3>
-
-        <p>
-
-            Successfully completed a Frontend Development Virtual Internship, gaining hands-on experience in responsive web design, modern UI development, and real-world frontend projects.
-
-        </p>
-
-    </div>
-
-</div>
-
-        <!-- Open Source -->
-
         <div class="timeline-item">
 
-            <div class="timeline-dot"></div>
+            <div class="timeline-icon">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+            </div>
 
             <div class="timeline-content">
 
-                <span> May-2026 - Present</span>
+                <span>1 July 2026 – 30 July 2026</span>
 
-                <h3>Open Source Contributor</h3>
+                <h3>Frontend Development Intern</h3>
 
                 <p>
 
-                    Started contributing to GitHub projects,
-                    solving issues, improving repositories,
-                    and collaborating with the open-source community.
+                    Successfully completed a Frontend Development
+                    Internship at <strong>CodeAlpha</strong>,
+                    working on responsive websites and improving
+                    practical frontend development skills.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+
+                <i class="fa-solid fa-code-branch"></i>
+
+            </div>
+
+            <div class="timeline-content">
+
+                <span>2026 – Present</span>
+
+                <h3>Open Source Journey</h3>
+
+                <p>
+
+                    Contributing to open-source projects,
+                    learning collaborative development,
+                    and improving technical skills through GitHub.
 
                 </p>
 
@@ -608,17 +754,15 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
 
 </section>
 
-      <!-- 
-     ACHIEVEMENTS
- -->
+<!-- ACHIEVEMENTS -->
 
-<section class="achievements">
+<section class="achievements section">
 
-    <div class="section-header">
+    <div class="section-title">
 
-        <p>Milestones</p>
+        <span>Achievements</span>
 
-        <h2>Achievements</h2>
+        <h2>Highlights</h2>
 
     </div>
 
@@ -626,61 +770,41 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
 
         <div class="achievement-card">
 
-            <i class="fa-solid fa-code-branch"></i>
+            <i class="fa-solid fa-medal"></i>
 
-            <h3>Open Source</h3>
+            <h3>CodeAlpha Internship</h3>
 
-            <p>
-
-                Active GitHub contributor and continuously
-                improving through community projects.
-
-            </p>
+            <p>Frontend Development Internship (2026)</p>
 
         </div>
 
         <div class="achievement-card">
 
-            <i class="fa-solid fa-laptop-code"></i>
+            <i class="fa-solid fa-code"></i>
 
-            <h3>Projects</h3>
+            <h3>Frontend Projects</h3>
 
-            <p>
-
-                Built multiple frontend applications
-                with responsive UI and modern design.
-
-            </p>
+            <p>Built multiple responsive web applications.</p>
 
         </div>
 
         <div class="achievement-card">
 
-            <i class="fa-solid fa-book"></i>
+            <i class="fa-solid fa-book-open"></i>
 
             <h3>Continuous Learning</h3>
 
-            <p>
-
-                Improving JavaScript, React,
-                Git, DSA and modern web development.
-
-            </p>
+            <p>JavaScript, Firebase, Git & Modern Web Development.</p>
 
         </div>
 
         <div class="achievement-card">
 
-            <i class="fa-solid fa-award"></i>
+            <i class="fa-solid fa-star"></i>
 
             <h3>Future Goal</h3>
 
-            <p>
-
-                Microsoft Learn Student Ambassador
-                & Software Engineer.
-
-            </p>
+            <p>Microsoft Learn Student Ambassador.</p>
 
         </div>
 
@@ -688,39 +812,34 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
 
 </section>
 
-      <!-- 
-     GITHUB SECTION
- -->
+<!-- GITHUB -->
 
-<section class="github" id="github">
+<section class="github section" id="github">
 
-    <div class="section-header">
+    <div class="section-title">
 
-        <p>Open Source</p>
+        <span>GitHub</span>
 
-        <h2>GitHub Activity</h2>
+        <h2>My GitHub Profile</h2>
 
     </div>
 
-    <div class="github-container">
+    <div class="github-box">
 
-        <img
-        src="https://github-readme-stats.vercel.app/api?username=Codectrix-0&show_icons=true&theme=tokyonight&hide_border=true"
-        alt="GitHub Stats">
+        <h3>Codectrix-0</h3>
 
-        <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Codectrix-0&layout=compact&theme=tokyonight&hide_border=true"
-        alt="Top Languages">
+        <p>
 
-    </div>
+            I regularly upload projects, improve my coding skills,
+            and continue my open-source learning journey.
 
-    <div class="github-btn">
+        </p>
 
         <a href="https://github.com/Codectrix-0"
-           target="_blank"
-           class="primary-btn">
 
-            <i class="fab fa-github"></i>
+           target="_blank"
+
+           class="btn primary-btn">
 
             Visit GitHub
 
@@ -730,165 +849,163 @@ Currently preparing for internships and the Microsoft Learn Student Ambassador P
 
 </section>
 
-      <section class="resume" id="resume">
+<!-- RESUME -->
 
-<div class="section-header">
+<section class="resume section" id="resume">
 
-<p>Resume</p>
+    <div class="section-title">
 
-<h2>Download My Resume</h2>
+        <span>Resume</span>
 
-</div>
+        <h2>Download My Resume</h2>
 
-<div class="resume-card">
+    </div>
 
-<i class="fa-solid fa-file-lines"></i>
+    <div class="resume-box">
 
-<h3>Frontend Developer Resume</h3>
+        <h3>Divya Mer Resume</h3>
 
-<p>
+        <p>
 
-Download or preview my latest resume.
+            View or download my latest resume.
 
-</p>
+        </p>
 
-<div class="resume-buttons">
+        <div class="resume-buttons">
 
-<a href="assets/resume/Divya_Mer_Resume.pdf"
+            <a href="assets/resume/Divya_Mer_Resume.pdf"
 
-target="_blank"
+               target="_blank"
 
-class="primary-btn">
+               class="btn primary-btn">
 
-<i class="fa-solid fa-eye"></i>
+                View Resume
 
-View Resume
+            </a>
 
-</a>
+            <a href="assets/resume/Divya_Mer_Resume.pdf"
 
-<a href="assets/resume/Divya_Mer_Resume.pdf"
+               download
 
-download
+               class="btn secondary-btn">
 
-class="secondary-btn">
+                Download Resume
 
-<i class="fa-solid fa-download"></i>
+            </a>
 
-Download Resume
+        </div>
 
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-      <section class="contact" id="contact">
+<!-- CONTACT -->
 
-<div class="section-header">
+<section class="contact section" id="contact">
 
-<p>Let's Connect</p>
+    <div class="section-title">
 
-<h2>Contact Me</h2>
+        <span>Contact</span>
 
-</div>
+        <h2>Let's Connect</h2>
 
-<div class="contact-container">
+    </div>
 
-<form>
+    <div class="contact-container">
 
-<input
-type="text"
-placeholder="Your Name"
-required>
+        <div class="contact-card">
 
-<input
-type="email"
-placeholder="Your Email"
-required>
+            <i class="fa-solid fa-envelope"></i>
 
-<textarea
-rows="6"
-placeholder="Your Message"></textarea>
+            <h3>Email</h3>
 
-<button
-type="submit"
-class="primary-btn">
+            <a href="mailto:divyamer066@gmail.com">
 
-Send Message
+                divyamer066@gmail.com
 
-</button>
+            </a>
 
-</form>
+        </div>
 
-<div class="contact-info">
+        <div class="contact-card">
 
-    <h3>Let's Connect</h3>
+            <i class="fab fa-github"></i>
 
-    <p>
-        <i class="fas fa-envelope"></i>
-        divyamer066@gmail.com
-    </p>
+            <h3>GitHub</h3>
 
-    <p>
-        <i class="fab fa-github"></i>
-        github.com/Codectrix-0
-    </p>
+            <a href="https://github.com/Codectrix-0"
 
-    <p>
-        <i class="fab fa-linkedin"></i>
-        linkedin.com/in/divyamer
-    </p>
+               target="_blank">
 
-</div>
-      
-</div>
+                github.com/Codectrix-0
+
+            </a>
+
+        </div>
+
+        <div class="contact-card">
+
+            <i class="fab fa-linkedin"></i>
+
+            <h3>LinkedIn</h3>
+
+            <a href="https://www.linkedin.com/in/divyamer"
+
+               target="_blank">
+
+                linkedin.com/in/divyamer
+
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
-      <footer>
+<!-- FOOTER -->
 
-<h2>
+<footer>
 
-Divya<span>Mer</span>
+    <h2>
 
-</h2>
+        Divya<span>Mer</span>
 
-<p>
+    </h2>
 
-Designed & Developed with 💜 by Divya Mer
+    <p>
 
-</p>
+        Designed & Developed with ❤️ by Divya Mer
 
-<div class="footer-icons">
+    </p>
 
-    <a href="https://github.com/Codectrix-0"
-       target="_blank">
+    <div class="footer-links">
 
-        <i class="fab fa-github"></i>
+        <a href="https://github.com/Codectrix-0" target="_blank">
 
-    </a>
+            <i class="fab fa-github"></i>
 
-    <a href="https://www.linkedin.com/in/divyamer/"
-       target="_blank">
+        </a>
 
-        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/divyamer" target="_blank">
 
-    </a>
+            <i class="fab fa-linkedin"></i>
 
-    <a href="mailto:divyamer066@gmail.com">
+        </a>
 
-        <i class="fas fa-envelope"></i>
+        <a href="mailto:divyamer066@gmail.com">
 
-    </a>
+            <i class="fa-solid fa-envelope"></i>
 
-</div>
-<p>
+        </a>
 
-© 2026 All Rights Reserved
+    </div>
 
-</p>
+    <p>
+
+        © 2026 Divya Mer. All Rights Reserved.
+
+    </p>
 
 </footer>
 
@@ -897,3 +1014,4 @@ Designed & Developed with 💜 by Divya Mer
 </body>
 
 </html>
+

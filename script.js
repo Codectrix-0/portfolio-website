@@ -1,69 +1,209 @@
+/* 
+   TYPING ANIMATION
+ */
 
-const themeBtn = document.getElementById("theme-toggle");
+const text = [
+    "Frontend Developer",
+    "BCA Student",
+    "Open Source Contributor",
+    "UI Enthusiast",
+    "Continuous Learner"
+];
 
-const icon = themeBtn.querySelector("i");
+let textIndex = 0;
+let charIndex = 0;
+let deleting = false;
 
-if(localStorage.getItem("theme")==="dark"){
+const typing = document.getElementById("typing");
 
-    document.body.classList.add("dark");
+function typeEffect(){
 
-    icon.className="fa-solid fa-sun";
+    const current = text[textIndex];
 
-}
+    if(!deleting){
 
-themeBtn.onclick=()=>{
+        typing.textContent = current.substring(0,charIndex++);
 
-    document.body.classList.toggle("dark");
+        if(charIndex > current.length){
 
-    if(document.body.classList.contains("dark")){
+            deleting = true;
 
-        icon.className="fa-solid fa-sun";
+            setTimeout(typeEffect,1500);
 
-        localStorage.setItem("theme","dark");
+            return;
+        }
 
-    }
+    }else{
 
-    else{
+        typing.textContent = current.substring(0,charIndex--);
 
-        icon.className="fa-solid fa-moon";
+        if(charIndex < 0){
 
-        localStorage.setItem("theme","light");
+            deleting = false;
 
-    }
+            textIndex++;
 
-}
-const hiddenElements = document.querySelectorAll(
-    ".hidden"
-);
+            if(textIndex >= text.length){
 
-const observer = new IntersectionObserver((entries)=>{
+                textIndex = 0;
 
-    entries.forEach((entry)=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("show");
+            }
 
         }
 
-    });
+    }
 
-},{
-    threshold:.15
+    setTimeout(typeEffect, deleting ? 60 : 120);
+
+}
+
+typeEffect();
+
+
+/* 
+   THEME TOGGLE
+ */
+
+const themeBtn = document.getElementById("theme-toggle");
+
+const body = document.body;
+
+const icon = themeBtn.querySelector("i");
+
+if(localStorage.getItem("theme") === "light"){
+
+    body.classList.add("light");
+
+    icon.className = "fa-solid fa-sun";
+
+}
+
+themeBtn.onclick = () => {
+
+    body.classList.toggle("light");
+
+    if(body.classList.contains("light")){
+
+        localStorage.setItem("theme","light");
+
+        icon.className = "fa-solid fa-sun";
+
+    }else{
+
+        localStorage.setItem("theme","dark");
+
+        icon.className = "fa-solid fa-moon";
+
+    }
+
+};
+
+
+/* 
+   SCROLL REVEAL
+ */
+
+const revealElements = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
 });
 
-hiddenElements.forEach((el)=>{
+},{threshold:.15});
 
-    observer.observe(el);
+revealElements.forEach(sec=>{
+
+sec.classList.add("hidden");
+
+observer.observe(sec);
 
 });
-const cursor=document.querySelector(".cursor");
+
+
+/* 
+   CURSOR GLOW
+ */
+
+const cursor = document.querySelector(".cursor-glow");
 
 document.addEventListener("mousemove",(e)=>{
 
-    cursor.style.left=e.clientX+"px";
+cursor.style.left = e.clientX + "px";
 
-    cursor.style.top=e.clientY+"px";
+cursor.style.top = e.clientY + "px";
 
 });
 
+
+/* 
+   BACK TO TOP
+ */
+
+const topBtn = document.createElement("button");
+
+topBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+
+topBtn.id = "topBtn";
+
+document.body.appendChild(topBtn);
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 500){
+
+topBtn.classList.add("active");
+
+}else{
+
+topBtn.classList.remove("active");
+
+}
+
+});
+
+topBtn.onclick = ()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+/* 
+   SCROLL PROGRESS
+ */
+
+const progress = document.createElement("div");
+
+progress.id = "progress";
+
+document.body.appendChild(progress);
+
+window.addEventListener("scroll",()=>{
+
+const total =
+
+document.documentElement.scrollHeight -
+
+window.innerHeight;
+
+const current =
+
+(window.scrollY / total) * 100;
+
+progress.style.width = current + "%";
+
+});

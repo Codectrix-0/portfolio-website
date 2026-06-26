@@ -66,17 +66,11 @@ typeEffect();
 
 const themeBtn = document.getElementById("theme-toggle");
 
-const body = document.body;
+themeBtn.addEventListener("click", () => {
 
-const icon = themeBtn.querySelector("i");
+    document.body.classList.toggle("light");
 
-if(localStorage.getItem("theme") === "light"){
-
-    body.classList.add("light");
-
-    icon.className = "fa-solid fa-sun";
-
-}
+});
 
 themeBtn.onclick = () => {
 

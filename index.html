@@ -1,762 +1,776 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Divya Mer | Portfolio</title>
+<title>Divya Mer | Portfolio</title>
 
-    <meta name="description"
-        content="Official Portfolio of Divya Mer | Frontend Developer | BCA Student | Open Source Learner">
+<meta name="description"
+content="Official Portfolio of Divya Mer - Frontend Developer, BCA Student & Open Source Learner">
 
-    <meta name="keywords"
-        content="Divya Mer, Portfolio, Frontend Developer, HTML, CSS, JavaScript, GitHub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <meta name="author" content="Divya Mer">
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-    <link rel="icon" href="assets/icons/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
 
-    <!-- Google Font -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="style.css">
 
 </head>
 
 <body>
 
-    <!-- Loader -->
+<!--
+LOADER
+-->
 
-    <div id="loader">
+<div id="loader">
 
-        <div class="loader-ring"></div>
+<div class="spinner"></div>
 
-        <h2>Divya Mer</h2>
+<h2>Divya Mer</h2>
 
-        <p>Loading Portfolio...</p>
+<p>Loading Portfolio...</p>
 
-    </div>
+</div>
 
-    <!-- Background -->
+<!--
+SCROLL BAR
+-->
 
-    <div class="blob blob1"></div>
+<div id="scroll-progress"></div>
 
-    <div class="blob blob2"></div>
+<!--
+BACKGROUND
+-->
 
-    <div class="blob blob3"></div>
+<div class="bg-circle bg1"></div>
+<div class="bg-circle bg2"></div>
+<div class="bg-circle bg3"></div>
 
-    <div id="scroll-progress"></div>
+<!--
+HEADER
+-->
 
-    <button id="backToTop">
+<header>
 
-        <i class="fa-solid fa-arrow-up"></i>
+<nav class="navbar">
 
-    </button>
+<a href="#" class="logo">
 
-    <!-- Header -->
+Divya<span>Mer</span>
 
-    <header>
+</a>
 
-        <nav class="navbar">
+<ul class="nav-links">
 
-            <a href="#home" class="logo">
+<li><a href="#home">Home</a></li>
 
-                Divya<span>Mer</span>
+<li><a href="#about">About</a></li>
 
-            </a>
+<li><a href="#skills">Skills</a></li>
 
-            <ul class="nav-links">
+<li><a href="#projects">Projects</a></li>
 
-                <li><a href="#home">Home</a></li>
+<li><a href="#journey">Journey</a></li>
 
-                <li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
 
-                <li><a href="#skills">Skills</a></li>
+</ul>
 
-                <li><a href="#projects">Projects</a></li>
+<div class="nav-buttons">
 
-                <li><a href="#journey">Journey</a></li>
+<button id="theme-toggle">
 
-                <li><a href="#contact">Contact</a></li>
+<i class="fa-solid fa-moon"></i>
 
-            </ul>
+</button>
 
-            <div class="nav-actions">
+<button id="menu-btn">
 
-                <button id="theme-toggle">
+<i class="fa-solid fa-bars"></i>
 
-                    <i class="fa-solid fa-moon"></i>
+</button>
 
-                </button>
+</div>
 
-                <div id="menu-btn">
+</nav>
 
-                    <i class="fa-solid fa-bars"></i>
+</header>
 
-                </div>
+<!--
+HOME
+-->
 
-            </div>
+<section id="home" class="hero">
 
-        </nav>
+<div class="hero-left">
 
-    </header>
+<span class="tag">
 
-    <!-- Hero -->
+👋 Welcome to my Portfolio
 
-    <section id="home" class="hero">
+</span>
 
-        <div class="hero-content">
+<h1>
 
-            <span class="hero-tag">
+Hi, I'm
 
-                👋 Welcome to my Portfolio
+<span>Divya Mer</span>
 
-            </span>
+</h1>
 
-            <h1>
+<h3 id="typing">
 
-                Hi, I'm
+Frontend Developer
 
-                <span>Divya Mer</span>
+</h3>
 
-            </h1>
+<p>
 
-            <h2>
+I'm Divya Mer, a BCA student (2025–2028) passionate about Frontend Development,
+Open Source, and building beautiful web experiences.
 
-                <span id="typing"></span>
+Currently learning JavaScript, Firebase, Git & GitHub while working towards becoming
+a Microsoft Learn Student Ambassador.
 
-            </h2>
+</p>
 
-            <p>
+<div class="hero-buttons">
 
-                I am a BCA student passionate about Frontend Development,
-                Open Source, and building clean, responsive web applications.
-                Currently preparing for internships, contributing to projects,
-                and working toward becoming a Microsoft Learn Student Ambassador.
+<a href="#projects" class="btn primary">
 
-            </p>
+Explore Projects
 
-            <div class="hero-buttons">
+</a>
 
-                <a href="#projects" class="btn primary-btn">
+<a href="Divya_Mer_Resume.pdf"
 
-                    View Projects
+target="_blank"
 
-                </a>
+class="btn secondary">
 
-                <a href="assets/resume/Divya_Mer_Resume.pdf"
+View Resume
 
-                    target="_blank"
+</a>
 
-                    class="btn secondary-btn">
+</div>
 
-                    View Resume
+<div class="social-icons">
 
-                </a>
+<a href="https://github.com/Codectrix-0"
 
-            </div>
+target="_blank">
 
-            <div class="social-links">
+<i class="fab fa-github"></i>
 
-                <a href="https://github.com/Codectrix-0"
+</a>
 
-                    target="_blank"
+<a href="https://www.linkedin.com/in/divyamer"
 
-                    aria-label="GitHub">
+target="_blank">
 
-                    <i class="fab fa-github"></i>
+<i class="fab fa-linkedin"></i>
 
-                </a>
+</a>
 
-                <a href="https://www.linkedin.com/in/divyamer"
+<a href="mailto:divyamer066@gmail.com">
 
-                    target="_blank"
+<i class="fa-solid fa-envelope"></i>
 
-                    aria-label="LinkedIn">
+</a>
 
-                    <i class="fab fa-linkedin"></i>
+</div>
 
-                </a>
+</div>
 
-                <a href="mailto:divyamer066@gmail.com"
+<div class="hero-right">
 
-                    aria-label="Email">
+<div class="hero-card">
 
-                    <i class="fa-solid fa-envelope"></i>
+<div class="status">
 
-                </a>
+<span class="dot"></span>
 
-            </div>
+Available for Internship
 
-        </div>
+</div>
 
-        <div class="hero-card">
+<hr>
 
-            <div class="hero-box">
+<div class="hero-info">
 
-                <span class="status-dot"></span>
+<h4>Education</h4>
 
-                <h3>Available for Internship</h3>
+<p>BCA (2025–2028)</p>
 
-                <p>
+</div>
 
-                    Frontend Development • Open Source • Learning Everyday
+<div class="hero-info">
 
-                </p>
+<h4>Internship</h4>
 
-                <hr>
+<p>CodeAlpha Frontend Developer</p>
 
-                <div class="quick-info">
+</div>
 
-                    <div>
+<div class="hero-info">
 
-                        <h4>Education</h4>
+<h4>Open Source</h4>
 
-                        <p>BCA (2025–2028)</p>
+<p>Starting Journey (2026)</p>
 
-                    </div>
+</div>
 
-                    <div>
+<div class="hero-info">
 
-                        <h4>Focus</h4>
+<h4>Location</h4>
 
-                        <p>Frontend Development</p>
+<p>India</p>
 
-                    </div>
+</div>
 
-                    <div>
+</div>
 
-                        <h4>Location</h4>
-
-                        <p>India</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--ABOUT -->
-
-<section class="about section" id="about">
-
-    <div class="section-title">
-        <span>Get To Know Me</span>
-        <h2>About Me</h2>
-    </div>
-
-    <div class="about-container">
-
-        <div class="about-card">
-
-            <h3>Hello 👋</h3>
-
-            <p>
-
-                I'm <strong>Divya Mer</strong>, a passionate BCA student (2025–2028)
-                with a strong interest in Frontend Development, Open Source,
-                and creating modern web experiences.
-
-            </p>
-
-            <p>
-
-                I enjoy transforming ideas into beautiful and responsive
-                websites while continuously improving my programming
-                and problem-solving skills.
-
-            </p>
-
-            <p>
-
-                Currently preparing for internships, Microsoft Learn Student
-                Ambassador, and expanding my knowledge in JavaScript,
-                Firebase, Git, GitHub and modern web technologies.
-
-            </p>
-
-        </div>
-
-        <div class="about-info">
-
-            <div class="info-box">
-
-                <i class="fa-solid fa-graduation-cap"></i>
-
-                <h4>Education</h4>
-
-                <p>BCA (2025–2028)</p>
-
-            </div>
-
-            <div class="info-box">
-
-                <i class="fa-solid fa-laptop-code"></i>
-
-                <h4>Specialization</h4>
-
-                <p>Frontend Development</p>
-
-            </div>
-
-            <div class="info-box">
-
-                <i class="fa-solid fa-code-branch"></i>
-
-                <h4>Open Source</h4>
-
-                <p>Starting in 2026</p>
-
-            </div>
-
-            <div class="info-box">
-
-                <i class="fa-solid fa-award"></i>
-
-                <h4>Goal</h4>
-
-                <p>Software Engineer</p>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- SKILLS -->
+<!--
+ABOUT
+-->
 
-<section class="skills section" id="skills">
+<section id="about" class="about section">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <span>Tech Stack</span>
+<span>Get To Know Me</span>
 
-        <h2>Skills & Tools</h2>
+<h2>About Me</h2>
 
-    </div>
+</div>
 
-    <div class="skills-grid">
+<div class="about-container">
 
-        <div class="skill-card">
-            <i class="fab fa-html5"></i>
-            <h3>HTML5</h3>
-            <span>Advanced</span>
-        </div>
+<div class="about-text">
 
-        <div class="skill-card">
-            <i class="fab fa-css3-alt"></i>
-            <h3>CSS3</h3>
-            <span>Advanced</span>
-        </div>
+<h3>Hello 👋</h3>
 
-        <div class="skill-card">
-            <i class="fab fa-js"></i>
-            <h3>JavaScript</h3>
-            <span>Intermediate</span>
-        </div>
+<p>
 
-        <div class="skill-card">
-            <i class="fab fa-git-alt"></i>
-            <h3>Git</h3>
-            <span>Intermediate</span>
-        </div>
+I'm <strong>Divya Mer</strong>, a passionate BCA student (2025–2028)
+with a strong interest in Frontend Development, Open Source,
+and creating modern web experiences.
 
-        <div class="skill-card">
-            <i class="fab fa-github"></i>
-            <h3>GitHub</h3>
-            <span>Intermediate</span>
-        </div>
+</p>
 
-        <div class="skill-card">
-            <i class="fa-solid fa-code"></i>
-            <h3>C</h3>
-            <span>Intermediate</span>
-        </div>
+<p>
 
-        <div class="skill-card">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>C++</h3>
-            <span>Intermediate</span>
-        </div>
+I enjoy transforming ideas into beautiful, responsive websites while
+continuously improving my programming and problem-solving skills.
 
-        <div class="skill-card">
-            <i class="fab fa-python"></i>
-            <h3>Python</h3>
-            <span>Basic</span>
-        </div>
+</p>
 
-        <div class="skill-card">
-            <i class="fa-solid fa-fire"></i>
-            <h3>Firebase</h3>
-            <span>Learning</span>
-        </div>
+<p>
 
-        <div class="skill-card">
-            <i class="fab fa-figma"></i>
-            <h3>Figma</h3>
-            <span>Basic</span>
-        </div>
+Currently preparing for internships, Microsoft Learn Student Ambassador,
+and expanding my knowledge in JavaScript, Firebase,
+Git, GitHub and modern web technologies.
 
-    </div>
+</p>
+
+</div>
+
+<div class="about-cards">
+
+<div class="info-card">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h4>Education</h4>
+
+<p>BCA (2025–2028)</p>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h4>Specialization</h4>
+
+<p>Frontend Development</p>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-code-branch"></i>
+
+<h4>Open Source</h4>
+
+<p>Starting in 2026</p>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h4>Goal</h4>
+
+<p>Software Engineer</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- PROJECTS -->
+<!--
+SKILLS
+-->
 
-<section class="projects section" id="projects">
+<section id="skills" class="skills section">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <span>Featured Work</span>
+<span>Tech Stack</span>
 
-        <h2>Projects</h2>
+<h2>Skills & Tools</h2>
 
-    </div>
+</div>
 
-    <div class="projects-container">
+<div class="skills-grid">
 
-        <!-- Smart Task Manager -->
+<div class="skill-card">
 
-        <div class="project-card">
+<i class="fa-brands fa-html5"></i>
 
-            <h3>Smart Task Manager ⭐</h3>
+<h3>HTML5</h3>
 
-            <p>
+<span>Advanced</span>
 
-                A modern productivity application designed to manage
-                daily tasks with an intuitive and responsive interface.
+</div>
 
-            </p>
+<div class="skill-card">
 
-            <h4>Key Features</h4>
+<i class="fa-brands fa-css3-alt"></i>
 
-            <ul>
+<h3>CSS3</h3>
 
-                <li>✔ Dark / Light Theme</li>
+<span>Advanced</span>
 
-                <li>✔ Local Storage</li>
+</div>
 
-                <li>✔ Search Tasks</li>
+<div class="skill-card">
 
-                <li>✔ Categories</li>
+<i class="fa-brands fa-js"></i>
 
-                <li>✔ Responsive Design</li>
+<h3>JavaScript</h3>
 
-            </ul>
+<span>Intermediate</span>
 
-            <div class="tech-tags">
+</div>
 
-                <span>HTML</span>
+<div class="skill-card">
 
-                <span>CSS</span>
+<i class="fa-brands fa-git-alt"></i>
 
-                <span>JavaScript</span>
+<h3>Git</h3>
 
-            </div>
+<span>Intermediate</span>
 
-            <div class="project-links">
+</div>
 
-                <a href="https://github.com/Codectrix-0"
-                    target="_blank">
+<div class="skill-card">
 
-                    GitHub
+<i class="fa-brands fa-github"></i>
 
-                </a>
+<h3>GitHub</h3>
 
-                <a href="https://codectrix-0.github.io/smart-task-manager/"
-                    target="_blank">
+<span>Intermediate</span>
 
-                    Live Demo
+</div>
 
-                </a>
+<div class="skill-card">
 
-            </div>
+<i class="fa-solid fa-code"></i>
 
-        </div>
+<h3>C</h3>
 
-        <!-- MindEase -->
+<span>Intermediate</span>
 
-        <div class="project-card">
+</div>
 
-            <h3>MindEase</h3>
+<div class="skill-card">
 
-            <p>
+<i class="fa-solid fa-laptop-code"></i>
 
-                A clean mental wellness web application focused on
-                creating a calm and user-friendly experience.
+<h3>C++</h3>
 
-            </p>
+<span>Intermediate</span>
 
-            <h4>Key Features</h4>
+</div>
 
-            <ul>
+<div class="skill-card">
 
-                <li>✔ Responsive UI</li>
+<i class="fa-brands fa-python"></i>
 
-                <li>✔ Modern Layout</li>
+<h3>Python</h3>
 
-                <li>✔ Interactive Design</li>
+<span>Basic</span>
 
-                <li>✔ Clean Interface</li>
+</div>
 
-            </ul>
+<div class="skill-card">
 
-            <div class="tech-tags">
+<i class="fa-solid fa-fire"></i>
 
-                <span>HTML</span>
+<h3>Firebase</h3>
 
-                <span>CSS</span>
+<span>Learning</span>
 
-                <span>JavaScript</span>
+</div>
 
-            </div>
+<div class="skill-card">
 
-            <div class="project-links">
+<i class="fa-brands fa-figma"></i>
 
-                <a href="https://github.com/Codectrix-0"
-                    target="_blank">
+<h3>Figma</h3>
 
-                    GitHub
+<span>Intermediate</span>
 
-                </a>
+</div>
 
-                <a href="https://codectrix-0.github.io/MindEase/"
-                    target="_blank">
-
-                    Live Demo
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- FinFlow -->
-
-        <div class="project-card">
-
-            <h3>FinFlow</h3>
-
-            <p>
-
-                Personal finance management application currently
-                under active development.
-
-            </p>
-
-            <h4>Key Features</h4>
-
-            <ul>
-
-                <li>✔ Expense Tracking</li>
-
-                <li>✔ Income Management</li>
-
-                <li>✔ Dashboard</li>
-
-                <li>✔ Firebase Integration (Coming Soon)</li>
-
-            </ul>
-
-            <div class="tech-tags">
-
-                <span>HTML</span>
-
-                <span>CSS</span>
-
-                <span>JavaScript</span>
-
-            </div>
-
-            <div class="project-links">
-
-                <a href="https://github.com/Codectrix-0"
-                    target="_blank">
-
-                    GitHub
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- Portfolio -->
-
-        <div class="project-card">
-
-            <h3>Portfolio Website</h3>
-
-            <p>
-
-                My personal portfolio showcasing projects,
-                technical skills, achievements, and journey.
-
-            </p>
-
-            <h4>Key Features</h4>
-
-            <ul>
-
-                <li>✔ Fully Responsive</li>
-
-                <li>✔ Dark / Light Mode</li>
-
-                <li>✔ Modern UI</li>
-
-                <li>✔ Smooth Animations</li>
-
-            </ul>
-
-            <div class="tech-tags">
-
-                <span>HTML</span>
-
-                <span>CSS</span>
-
-                <span>JavaScript</span>
-
-            </div>
-
-            <div class="project-links">
-
-                <a href="https://github.com/Codectrix-0"
-                    target="_blank">
-
-                    GitHub
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- JOURNEY -->
+<!--
+PROJECTS
+-->
 
-<section class="journey section" id="journey">
+<section id="projects" class="projects section">
 
-    <div class="section-title">
+<div class="section-title">
 
-        <span>My Journey</span>
+<span>Featured Work</span>
 
-        <h2>Education & Experience</h2>
+<h2>Projects</h2>
 
-    </div>
+</div>
 
-    <div class="timeline">
+<div class="projects-grid">
 
-        <div class="timeline-item">
+<!-- Smart Task Manager -->
 
-            <div class="timeline-icon">
+<div class="project-card">
 
-                <i class="fa-solid fa-graduation-cap"></i>
+<h3>Smart Task Manager ⭐</h3>
 
-            </div>
+<p>
 
-            <div class="timeline-content">
+A modern productivity application designed to manage daily tasks
+with an intuitive and responsive interface.
 
-                <span>2025 – 2028</span>
+</p>
 
-                <h3>Bachelor of Computer Applications (BCA)</h3>
+<ul>
 
-                <p>
+<li>✓ Dark / Light Theme</li>
 
-                    Currently pursuing BCA while building strong
-                    fundamentals in programming, web development,
-                    Git, GitHub and Data Structures.
+<li>✓ Local Storage</li>
 
-                </p>
+<li>✓ Search Tasks</li>
 
-            </div>
+<li>✓ Categories</li>
 
-        </div>
+<li>✓ Responsive Design</li>
 
-        <div class="timeline-item">
+<li>✓ Modern UI</li>
 
-            <div class="timeline-icon">
+</ul>
 
-                <i class="fa-solid fa-laptop-code"></i>
+<div class="project-buttons">
 
-            </div>
+<a href="https://github.com/Codectrix-0"
 
-            <div class="timeline-content">
+target="_blank"
 
-                <span>1 July 2026 – 30 July 2026</span>
+class="btn secondary">
 
-                <h3>Frontend Development Intern</h3>
+GitHub
 
-                <p>
+</a>
 
-                    Successfully completed a Frontend Development
-                    Internship at <strong>CodeAlpha</strong>,
-                    working on responsive websites and improving
-                    practical frontend development skills.
+<a href="https://codectrix-0.github.io/smart-task-manager/"
 
-                </p>
+target="_blank"
 
-            </div>
+class="btn primary">
 
-        </div>
+Live Demo
 
-        <div class="timeline-item">
+</a>
 
-            <div class="timeline-icon">
+</div>
 
-                <i class="fa-solid fa-code-branch"></i>
+</div>
 
-            </div>
+<!-- MindEase -->
 
-            <div class="timeline-content">
+<div class="project-card">
 
-                <span>2026 – Present</span>
+<h3>MindEase</h3>
 
-                <h3>Open Source Journey</h3>
+<p>
 
-                <p>
+A clean mental wellness web application focused on creating a calm
+and user-friendly experience.
 
-                    Contributing to open-source projects,
-                    learning collaborative development,
-                    and improving technical skills through GitHub.
+</p>
 
-                </p>
+<ul>
 
-            </div>
+<li>✓ Responsive UI</li>
 
-        </div>
+<li>✓ Modern Layout</li>
 
-    </div>
+<li>✓ Interactive Design</li>
+
+<li>✓ Clean Interface</li>
+
+</ul>
+
+<div class="project-buttons">
+
+<a href="https://github.com/Codectrix-0"
+
+target="_blank"
+
+class="btn secondary">
+
+GitHub
+
+</a>
+
+<a href="https://codectrix-0.github.io/MindEase/"
+
+target="_blank"
+
+class="btn primary">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+<!-- FinFlow -->
+
+<div class="project-card">
+
+<h3>FinFlow</h3>
+
+<p>
+
+Personal finance management application currently under active
+development.
+
+</p>
+
+<ul>
+
+<li>✓ Expense Tracking</li>
+
+<li>✓ Income Management</li>
+
+<li>✓ Dashboard</li>
+
+<li>✓ Firebase Integration (Coming Soon)</li>
+
+</ul>
+
+<div class="project-buttons">
+
+<a href="https://github.com/Codectrix-0/finflow-web"
+
+target="_blank"
+
+class="btn primary">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Portfolio -->
+
+<div class="project-card">
+
+<h3>Portfolio Website</h3>
+
+<p>
+
+My personal portfolio showcasing projects, technical skills,
+achievements, and journey.
+
+</p>
+
+<ul>
+
+<li>✓ Fully Responsive</li>
+
+<li>✓ Dark / Light Mode</li>
+
+<li>✓ Modern UI</li>
+
+<li>✓ Smooth Animations</li>
+
+</ul>
+
+<div class="tech-stack">
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- ACHIEVEMENTS -->
+<!--
+JOURNEY
+-->
 
-<section class="achievements section">
+<section id="journey" class="journey section">
+
+<div class="section-title">
+
+<span>My Journey</span>
+
+<h2>Education & Experience</h2>
+
+</div>
+
+<div class="timeline">
+
+<!-- Education -->
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<div class="timeline-content">
+
+<h4>2025 – 2028</h4>
+
+<h3>Bachelor of Computer Applications (BCA)</h3>
+
+<p>
+
+Currently pursuing BCA while building strong fundamentals in
+programming, web development, Git, GitHub and Data Structures.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Internship -->
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+</div>
+
+<div class="timeline-content">
+
+<h4>1 July 2026 – 30 July 2026</h4>
+
+<h3>Frontend Development Intern</h3>
+
+<p>
+
+Successfully completed a Frontend Development Internship at
+<strong>CodeAlpha</strong>, working on responsive websites and
+improving practical frontend development skills.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Open Source -->
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-code-branch"></i>
+
+</div>
+
+<div class="timeline-content">
+
+<h4>2026 – Present</h4>
+
+<h3>Open Source Journey</h3>
+
+<p>
+
+Contributing to open-source projects, learning collaborative
+development, and improving technical skills through GitHub.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--
+HIGHLIGHTS
+-->
+
+<section class="highlights section" id="highlights">
 
     <div class="section-title">
 
@@ -766,45 +780,58 @@
 
     </div>
 
-    <div class="achievement-grid">
+    <div class="highlight-grid">
 
-        <div class="achievement-card">
-
-            <i class="fa-solid fa-medal"></i>
-
-            <h3>CodeAlpha Internship</h3>
-
-            <p>Frontend Development Internship (2026)</p>
-
-        </div>
-
-        <div class="achievement-card">
+        <div class="highlight-card">
 
             <i class="fa-solid fa-code"></i>
 
-            <h3>Frontend Projects</h3>
+            <h3>Frontend Development</h3>
 
-            <p>Built multiple responsive web applications.</p>
-
-        </div>
-
-        <div class="achievement-card">
-
-            <i class="fa-solid fa-book-open"></i>
-
-            <h3>Continuous Learning</h3>
-
-            <p>JavaScript, Firebase, Git & Modern Web Development.</p>
+            <p>
+                Building responsive and modern web applications using HTML,
+                CSS and JavaScript.
+            </p>
 
         </div>
 
-        <div class="achievement-card">
+        <div class="highlight-card">
 
-            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-laptop"></i>
 
-            <h3>Future Goal</h3>
+            <h3>CodeAlpha Internship</h3>
 
-            <p>Microsoft Learn Student Ambassador.</p>
+            <p>
+                Frontend Development Intern
+                <br>
+                July 2026
+            </p>
+
+        </div>
+
+        <div class="highlight-card">
+
+            <i class="fa-solid fa-code-branch"></i>
+
+            <h3>Open Source</h3>
+
+            <p>
+                Starting my Open Source journey in 2026 and contributing
+                through GitHub.
+            </p>
+
+        </div>
+
+        <div class="highlight-card">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h3>Current Goal</h3>
+
+            <p>
+                Microsoft Learn Student Ambassador &
+                Software Engineer.
+            </p>
 
         </div>
 
@@ -812,34 +839,36 @@
 
 </section>
 
-<!-- GITHUB -->
+<!--
+GITHUB
+-->
 
-<section class="github section" id="github">
+<section id="github" class="github section">
 
     <div class="section-title">
 
         <span>GitHub</span>
 
-        <h2>My GitHub Profile</h2>
+        <h2>GitHub Activity</h2>
 
     </div>
 
-    <div class="github-box">
+    <div class="github-card">
 
         <h3>Codectrix-0</h3>
 
         <p>
 
-            I regularly upload projects, improve my coding skills,
-            and continue my open-source learning journey.
+            Passionate about learning, building projects,
+            solving problems and contributing to Open Source.
 
         </p>
 
         <a href="https://github.com/Codectrix-0"
 
-           target="_blank"
+            target="_blank"
 
-           class="btn primary-btn">
+            class="btn primary">
 
             Visit GitHub
 
@@ -849,19 +878,21 @@
 
 </section>
 
-<!-- RESUME -->
+<!--
+RESUME
+-->
 
-<section class="resume section" id="resume">
+<section id="resume" class="resume section">
 
     <div class="section-title">
 
         <span>Resume</span>
 
-        <h2>Download My Resume</h2>
+        <h2>Download Resume</h2>
 
     </div>
 
-    <div class="resume-box">
+    <div class="resume-card">
 
         <h3>Divya Mer Resume</h3>
 
@@ -875,9 +906,9 @@
 
             <a href="assets/resume/Divya_Mer_Resume.pdf"
 
-               target="_blank"
+                target="_blank"
 
-               class="btn primary-btn">
+                class="btn primary">
 
                 View Resume
 
@@ -885,9 +916,9 @@
 
             <a href="assets/resume/Divya_Mer_Resume.pdf"
 
-               download
+                download
 
-               class="btn secondary-btn">
+                class="btn secondary">
 
                 Download Resume
 
@@ -899,19 +930,21 @@
 
 </section>
 
-<!-- CONTACT -->
+<!--
+CONTACT
+-->
 
-<section class="contact section" id="contact">
+<section id="contact" class="contact section">
 
     <div class="section-title">
 
-        <span>Contact</span>
+        <span>Let's Connect</span>
 
-        <h2>Let's Connect</h2>
+        <h2>Contact Me</h2>
 
     </div>
 
-    <div class="contact-container">
+    <div class="contact-grid">
 
         <div class="contact-card">
 
@@ -935,7 +968,7 @@
 
             <a href="https://github.com/Codectrix-0"
 
-               target="_blank">
+                target="_blank">
 
                 github.com/Codectrix-0
 
@@ -951,7 +984,7 @@
 
             <a href="https://www.linkedin.com/in/divyamer"
 
-               target="_blank">
+                target="_blank">
 
                 linkedin.com/in/divyamer
 
@@ -963,7 +996,9 @@
 
 </section>
 
-<!-- FOOTER -->
+<!--
+FOOTER
+-->
 
 <footer>
 
@@ -979,15 +1014,19 @@
 
     </p>
 
-    <div class="footer-links">
+    <div class="footer-social">
 
-        <a href="https://github.com/Codectrix-0" target="_blank">
+        <a href="https://github.com/Codectrix-0"
+
+            target="_blank">
 
             <i class="fab fa-github"></i>
 
         </a>
 
-        <a href="https://www.linkedin.com/in/divyamer" target="_blank">
+        <a href="https://www.linkedin.com/in/divyamer"
+
+            target="_blank">
 
             <i class="fab fa-linkedin"></i>
 
@@ -1009,9 +1048,14 @@
 
 </footer>
 
+<button id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
 <script src="script.js"></script>
 
 </body>
 
 </html>
-
